@@ -1,0 +1,37 @@
+Assumptions
+1. We always start iterating from 1, based on the example in the problem. 
+2. Based on the first assumption, n cannot be less than or equal to 0. 
+
+
+var sum_to_n_a = function(n) {
+    // your code here
+    let sum = 0 
+
+    for (let i = 1; i < n; i++) {
+        sum += i;
+    } 
+
+    return sum;
+};
+
+var sum_to_n_b = function(n) {
+    // your code here
+    let pairs;
+    let sum = 0;
+    
+    if (n % 2 == 1) {
+        pairs = (n - 1) / 2;
+        sum = (n + 1) / 2;
+    }
+
+    return sum + pairs*(n+1);
+
+};
+
+var sum_to_n_c = function(n) {
+    // your code here
+    const d = 1;
+    const a = 1;
+    return (a+(n-1)*d)*(n/2);
+    
+};

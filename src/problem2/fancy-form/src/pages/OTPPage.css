@@ -1,0 +1,15 @@
+.container {
+  /* display: flex; */
+  justify-content: center;
+}
+.countdown-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label {
+  margin: auto;
+  display: inline;
+  white-space: initial;
+  word-break: break-all;
+}
